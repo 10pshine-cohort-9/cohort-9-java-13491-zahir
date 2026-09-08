@@ -1,0 +1,55 @@
+POST http://localhost:8080/api/contacts
+Content-Type: application/json
+
+{
+  "name": "Ali Khan",
+  "email": "ali@example.com",
+  "phone": "03001234567"
+}
+
+###
+POST http://localhost:8080/api/auth/register
+Content-Type: application/json
+
+{
+    "email": "john@example.com",
+    "phone": "03001234567",
+    "password": "123456"
+}
+
+###
+POST http://localhost:8080/api/auth/login
+Content-Type: application/json
+
+{
+  "email": "user@gmail.com",
+  "password": "password"
+}
+
+###
+GET http://localhost:8080/api/user-contacts
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJqb2huQGV4YW1wbGUuY29tIiwiaWF0IjoxNzg3ODYyNDA0LCJleHAiOjE3ODc4NjYwMDR9.r7qSDlRYbZfGmGQEkorGAuRNvLyB41J6fKxoPbq-1UWX8LAPE0inAVMBDuNrT1PU
+
+
+###
+POST http://localhost:8080/api/user-contacts
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJqb2huQGV4YW1wbGUuY29tIiwiaWF0IjoxNzg3ODYyNDA0LCJleHAiOjE3ODc4NjYwMDR9.r7qSDlRYbZfGmGQEkorGAuRNvLyB41J6fKxoPbq-1UWX8LAPE0inAVMBDuNrT1PU
+
+{
+  "name": "same Johnson",
+  "email": "same@gmail.com",
+  "phone": "03342345678"
+}
+
+
+###
+GET http://localhost:8080/api/profile
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJ1c2VyQGdtYWlsLmNvbSIsImlhdCI6MTc4Nzg2NjQyNiwiZXhwIjoxNzg3ODcwMDI2fQ.mk86El9nnUacIw_nYdg5tNHTDcwuhR4SlradPrWZDXTsJZkgCZTgIYqXhHXMp2Vt
+
+###
+GET http://localhost:8080/api/user-contacts/export
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJ1c2VyQGdtYWlsLmNvbSIsImlhdCI6MTc4ODQxNzM4MiwiZXhwIjoxNzg4NDIwOTgyfQ.j7OU3JPJ0muB8SQqMyoBR0oKNFOvH0XIqWCifpX9qSlPENhMAfaa5eeiwFc0ftzT
